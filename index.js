@@ -23,7 +23,7 @@ mongoose.connect(MONGO_DB_CONFIG.DB, {
 app.use(express.json());
 app.use('/uploads', express.static('uploads'));
 app.use("/api", require("./routes/app.routes"));
-// app.use(errors.errorHandler);
+app.use(errors.errorHandler);
 
 app.listen(process.env.port || 4000, function (){
     console.log("Ready to Go!");

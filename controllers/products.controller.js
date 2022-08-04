@@ -103,7 +103,7 @@ exports.update = (req, res, next) => {
 
 exports.delete = (req, res, next) => {   
     var model = {
-        productId: req.query.id,
+        productId: req.params.id,
 
     };
 
