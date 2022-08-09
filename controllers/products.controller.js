@@ -81,7 +81,7 @@ exports.update = (req, res, next) => {
             var model = {
                 productId: req.params.id,
                 productName: req.body.productName,
-                productDesrcription: req.body.productDesrcription,
+                productDescription: req.body.productDescription,
                 productPrice: req.body.productPrice,
                 productImage: path != "" ? url + "/" + path : "",
             };
