@@ -13,7 +13,7 @@ exports.create = (req, res, next) => {
                 productName: req.body.productName,
                 productDescription: req.body.productDescription,
                 productPrice: req.body.productPrice,
-                productImage: path != "" ? url + "/" + path : "",
+                productImage: path != "" ? "http://10.0.0.44:4000" + "/" + path : "",
             };
 
             productServices.createProducts(model, (error, results)=>{
